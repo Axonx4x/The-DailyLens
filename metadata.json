@@ -1,0 +1,6 @@
+{
+  "name": "The DailyLens - News, Stories and Perspectives",
+  "description": "A clean, modern, responsive static digital news publication demonstrating semantic HTML5 and CSS3.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

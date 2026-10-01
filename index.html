@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The DailyLens - News, Stories and Perspectives from Malawi</title>
+  <meta name="description" content="Independent Malawian digital journalism covering technology, politics, business, and community stories across Lilongwe, Blantyre, and beyond.">
+  <meta property="og:title" content="The DailyLens - News, Stories and Perspectives from Malawi">
+  <meta property="og:description" content="Independent Malawian digital journalism covering technology, politics, business, and community stories.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="top-masthead">
+      <div class="container masthead-content">
+        <!-- Publication Brand & Logo -->
+        <div class="brand-wrapper">
+          <a href="index.html" aria-label="The DailyLens Homepage">
+            <img src="images/logo.svg" alt="The DailyLens - Your Focused Daily News" class="brand-logo-img">
+          </a>
+        </div>
+
+        <!-- Date & Search Form -->
+        <div class="masthead-right">
+          <time datetime="2025-04-22" class="current-date">Tue, Apr 22, 2025</time>
+          <form class="search-form" action="#" method="get" role="search">
+            <label for="site-search" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">Search articles</label>
+            <input type="search" id="site-search" name="q" class="search-input" placeholder="Search Malawian news...">
+            <button type="submit" class="search-button" aria-label="Submit search">
+              <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="main-navigation" aria-label="Primary Navigation">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="politics.html" class="nav-link">Politics</a></li>
+          <li class="nav-item"><a href="technology.html" class="nav-link">Technology</a></li>
+          <li class="nav-item"><a href="business.html" class="nav-link">Business</a></li>
+          <li class="nav-item"><a href="sports.html" class="nav-link">Sports</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+    <!-- HERO FEATURED STORIES (CSS GRID) -->
+    <section class="home-hero-section" aria-label="Featured News">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Lead Story (Major Editorial Focus) -->
+          <article class="lead-story-card">
+            <img src="images/hero/hero_mubas_lab.jpg" alt="MUBAS Innovation Hub laboratory in Blantyre, Malawi" class="lead-story-img" referrerpolicy="no-referrer">
+            <div class="lead-story-overlay">
+              <span class="badge badge-edu">Education</span>
+              <h1 class="lead-story-headline">
+                <a href="article.html">MUBAS Innovation Hub Opens Advanced Renewable Energy Laboratory</a>
+              </h1>
+              <p class="lead-story-summary">
+                The state-of-the-art facility in Blantyre will empower Malawian engineering students to design local solar and hydro clean-energy solutions.
+              </p>
+              <div class="article-meta">
+                <span>By Charity Ndhlovu</span>
+                <span class="meta-dot" aria-hidden="true">•</span>
+                <time datetime="2025-04-22">Apr 22, 2025</time>
+              </div>
+            </div>
+          </article>
+
+          <!-- Secondary Stories (Stacked Column) -->
+          <aside class="secondary-stories-column" aria-label="Top Stories">
+            
+            <article class="secondary-story-card">
+              <img src="images/technology/solar_farmers.jpg" alt="Malawian students demonstrating solar pump in Dowa" class="secondary-story-img" referrerpolicy="no-referrer">
+              <div class="secondary-story-overlay">
+                <span class="badge badge-tech">Technology</span>
+                <h2 class="secondary-story-headline">
+                  <a href="article.html">Students Develop Low-Cost Solar Irrigation for Rural Communities</a>
+                </h2>
+                <div class="article-meta">
+                  <time datetime="2025-04-21">Apr 21, 2025</time>
+                </div>
+              </div>
+            </article>
+
+            <article class="secondary-story-card">
+              <img src="images/business/malawi_entrepreneurs.jpg" alt="Young Malawian tech entrepreneurs in Lilongwe" class="secondary-story-img" referrerpolicy="no-referrer">
+              <div class="secondary-story-overlay">
+                <span class="badge badge-biz">Business</span>
+                <h2 class="secondary-story-headline">
+                  <a href="business.html">Lilongwe Entrepreneurs Turn Digital Skills Into Agri-Tech Ventures</a>
+                </h2>
+                <div class="article-meta">
+                  <time datetime="2025-04-20">Apr 20, 2025</time>
+                </div>
+              </div>
+            </article>
+
+            <article class="secondary-story-card">
+              <img src="images/sports/malawi_football.jpg" alt="Youth community football match in Lilongwe" class="secondary-story-img" referrerpolicy="no-referrer">
+              <div class="secondary-story-overlay">
+                <span class="badge badge-sports">Sports</span>
+                <h2 class="secondary-story-headline">
+                  <a href="sports.html">Lilongwe Grassroots Youth Football Program Expands Across Districts</a>
+                </h2>
+                <div class="article-meta">
+                  <time datetime="2025-04-19">Apr 19, 2025</time>
+                </div>
+              </div>
+            </article>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-COLUMN HOMEPAGE SECTION (CSS GRID) -->
+    <section class="home-main-section" aria-label="Latest News, Most Read and Updates">
+      <div class="container">
+        <div class="home-content-grid">
+
+          <!-- Column 1: Latest News -->
+          <section class="latest-news-column" aria-labelledby="heading-latest-news">
+            <h2 id="heading-latest-news" class="section-title">Latest Malawian News</h2>
+            <div class="latest-news-list">
+
+              <article class="latest-news-card">
+                <div class="latest-news-thumb">
+                  <img src="images/technology/computer_classroom.jpg" alt="Students in secondary school computer room in Kasungu" referrerpolicy="no-referrer">
+                </div>
+                <div class="latest-news-info">
+                  <h3 class="latest-news-title">
+                    <a href="technology.html">Digital Literacy Drive Empowers Learners Across Kasungu &amp; Dedza</a>
+                  </h3>
+                  <div class="article-meta">
+                    <time datetime="2025-04-21">Apr 21, 2025</time>
+                  </div>
+                </div>
+              </article>
+
+              <article class="latest-news-card">
+                <div class="latest-news-thumb">
+                  <img src="images/general/malawi_library.jpg" alt="National Library Service reading hall in Malawi" referrerpolicy="no-referrer">
+                </div>
+                <div class="latest-news-info">
+                  <h3 class="latest-news-title">
+                    <a href="article.html">National Library Service Expands Free Digital Archiving in Zomba</a>
+                  </h3>
+                  <div class="article-meta">
+                    <time datetime="2025-04-20">Apr 20, 2025</time>
+                  </div>
+                </div>
+              </article>
+
+              <article class="latest-news-card">
+                <div class="latest-news-thumb">
+                  <img src="images/general/tree_planting.jpg" alt="Youth volunteers planting trees in Malawi hills" referrerpolicy="no-referrer">
+                </div>
+                <div class="latest-news-info">
+                  <h3 class="latest-news-title">
+                    <a href="article.html">Malawian Youth Lead Reforestation Drive on Mount Mulanje Slopes</a>
+                  </h3>
+                  <div class="article-meta">
+                    <time datetime="2025-04-18">Apr 18, 2025</time>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </section>
+
+          <!-- Column 2: Most Read Stories -->
+          <section class="most-read-column" aria-labelledby="heading-most-read">
+            <h2 id="heading-most-read" class="section-title">Most Read</h2>
+            <ol class="most-read-list">
+
+              <li class="most-read-item">
+                <span class="most-read-number">1</span>
+                <div class="most-read-text">
+                  <h4><a href="article.html">MUBAS Innovation Hub Opens Advanced Renewable Energy Laboratory</a></h4>
+                </div>
+              </li>
+
+              <li class="most-read-item">
+                <span class="most-read-number">2</span>
+                <div class="most-read-text">
+                  <h4><a href="article.html">Students Develop Low-Cost Solar Irrigation for Rural Communities</a></h4>
+                </div>
+              </li>
+
+              <li class="most-read-item">
+                <span class="most-read-number">3</span>
+                <div class="most-read-text">
+                  <h4><a href="business.html">Lilongwe Entrepreneurs Turn Digital Skills Into Agri-Tech Ventures</a></h4>
+                </div>
+              </li>
+
+              <li class="most-read-item">
+                <span class="most-read-number">4</span>
+                <div class="most-read-text">
+                  <h4><a href="sports.html">Lilongwe Grassroots Youth Football Program Expands Across Districts</a></h4>
+                </div>
+              </li>
+
+              <li class="most-read-item">
+                <span class="most-read-number">5</span>
+                <div class="most-read-text">
+                  <h4><a href="technology.html">Digital Literacy Drive Empowers Learners Across Kasungu &amp; Dedza</a></h4>
+                </div>
+              </li>
+
+            </ol>
+          </section>
+
+          <!-- Column 3: Sidebar (Newsletter & Category Directory) -->
+          <aside class="sidebar-widgets" aria-label="Sidebar Widgets">
+
+            <!-- Newsletter Signup Widget -->
+            <div class="widget-card">
+              <h3 class="widget-title">The DailyLens Dispatch</h3>
+              <p class="widget-subtitle">Get insightful Malawian journalism delivered straight to your inbox every morning.</p>
+              <form class="newsletter-form" action="#" method="post">
+                <label for="newsletter-email" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">Email address</label>
+                <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="btn-primary">Subscribe Free</button>
+              </form>
+            </div>
+
+            <!-- Category Directory Widget -->
+            <div class="widget-card">
+              <h3 class="widget-title">Categories</h3>
+              <ul class="categories-list">
+                <li>
+                  <a href="politics.html" class="category-link-item">
+                    <span class="cat-bullet bullet-politics" aria-hidden="true"></span>
+                    <span>Politics &amp; Civic Affairs</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="technology.html" class="category-link-item">
+                    <span class="cat-bullet bullet-tech" aria-hidden="true"></span>
+                    <span>Technology &amp; Innovation</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="business.html" class="category-link-item">
+                    <span class="cat-bullet bullet-biz" aria-hidden="true"></span>
+                    <span>Business &amp; Economy</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="sports.html" class="category-link-item">
+                    <span class="cat-bullet bullet-sports" aria-hidden="true"></span>
+                    <span>Sports &amp; Recreation</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content-grid">
+
+        <!-- Publication Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" aria-label="The DailyLens Homepage">
+            <img src="images/logo-white.svg" alt="The DailyLens" class="footer-logo-img">
+          </a>
+          <p class="footer-tagline">News, Stories and Perspectives from Malawi</p>
+          <p class="footer-copyright">&copy; 2025 The Daily Lens. All rights reserved. Registered Digital Newsroom in Malawi.</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="politics.html" class="footer-link">Politics</a></li>
+            <li><a href="technology.html" class="footer-link">Technology</a></li>
+            <li><a href="business.html" class="footer-link">Business</a></li>
+            <li><a href="sports.html" class="footer-link">Sports</a></li>
+            <li><a href="about.html" class="footer-link">About Charity Ndhlovu</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Newsroom</a></li>
+          </ul>
+        </nav>
+
+        <!-- Newsroom Contact Details -->
+        <div class="footer-contact">
+          <h4 class="footer-contact-title">Lilongwe Newsroom</h4>
+          <p class="footer-contact-item">
+            <span>Location:</span>
+            <span>City Centre, Lilongwe, Malawi</span>
+          </p>
+          <p class="footer-contact-item">
+            <span>Editor:</span>
+            <a href="mailto:charity@thedailylens.com">charity@thedailylens.com</a>
+          </p>
+          <p class="footer-contact-item">
+            <span>Desk:</span>
+            <a href="tel:+265123456789">+265 123 456 789</a>
+          </p>
+          <div class="footer-social-links" aria-label="Social media links">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
