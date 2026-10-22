@@ -3,24 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About The DailyLens &amp; Charity Ndhlovu - Independent Malawian Journalism</title>
-  <meta name="description" content="Learn about The Daily Lens, our founder and lead investigative journalist Charity Ndhlovu, and our mission to provide independent reporting across Malawi.">
+  <title>About The DailyLens — Verena Likupe &amp; Charity Ndhlovu</title>
+  <meta name="description" content="Learn about The DailyLens editorial founders Verena Likupe and Charity Ndhlovu, our mission, ethics, and independent digital journalism across Malawi.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
+
+  <!-- PAGE PRELOADER (Requirement 10: Loading Effects) -->
+  <div id="page-preloader" class="page-preloader" aria-hidden="true">
+    <div class="preloader-content">
+      <div class="preloader-spinner"></div>
+      <div class="preloader-branding">
+        <span class="preloader-title">The DailyLens</span>
+        <span class="preloader-tagline">Loading verified Malawian journalism...</span>
+      </div>
+      <div class="preloader-progress-bar">
+        <div class="preloader-progress-fill"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- SITE HEADER -->
   <header class="site-header">
     <div class="top-masthead">
       <div class="container masthead-content">
+        <!-- Brand Logo -->
         <div class="brand-wrapper">
           <a href="index.html" aria-label="The DailyLens Homepage">
             <img src="images/logo.svg" alt="The DailyLens - Your Focused Daily News" class="brand-logo-img">
           </a>
         </div>
+
+        <!-- Date, Search, Theme Toggle & Mobile Menu -->
         <div class="masthead-right">
-          <time datetime="2025-04-22" class="current-date">Tue, Apr 22, 2025</time>
+          <time datetime="2026-10-22" class="current-date">Thu, Oct 22, 2026</time>
+          
+          <button type="button" id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark mode">
+            <span class="icon-sun" style="display:none;">&#9728;</span>
+            <span class="icon-moon">&#9790;</span>
+          </button>
+
           <form class="search-form" action="#" method="get" role="search">
             <label for="site-search" class="visually-hidden" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0);">Search articles</label>
             <input type="search" id="site-search" name="q" class="search-input" placeholder="Search Malawian news...">
@@ -31,15 +55,91 @@
               </svg>
             </button>
           </form>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- MAIN NAVIGATION -->
-    <nav class="main-navigation" aria-label="Primary Navigation">
+    <!-- MAIN NAVIGATION WITH DUAL DROPDOWNS (Requirement 6) -->
+    <nav class="main-navigation" id="primary-nav" aria-label="Primary Navigation">
       <div class="container">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          
+          <!-- Dropdown 1: News Categories & Coverage -->
+          <li class="nav-item nav-item-dropdown">
+            <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              <span>News</span>
+              <span class="dropdown-chevron">&#9660;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="politics.html" class="dropdown-link">
+                  National &amp; Civic News
+                  <span class="dropdown-desc">Parliament, governance, and policy updates</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="article-reforestation.html" class="dropdown-link">
+                  Local &amp; Community News
+                  <span class="dropdown-desc">Grassroots developments across districts</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="article-mubas-lab.html" class="dropdown-link">
+                  Education &amp; Campus
+                  <span class="dropdown-desc">Universities, research hubs, and student life</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="politics.html#civic" class="dropdown-link">
+                  Civic Forums &amp; Youth Voices
+                  <span class="dropdown-desc">Youth parliament and public discourse</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Dropdown 2: Special Focus Categories -->
+          <li class="nav-item nav-item-dropdown">
+            <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              <span>Categories</span>
+              <span class="dropdown-chevron">&#9660;</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="technology.html" class="dropdown-link">
+                  Technology &amp; Innovation
+                  <span class="dropdown-desc">Solar tech, digital labs, and startups</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="business.html" class="dropdown-link">
+                  Business &amp; Economy
+                  <span class="dropdown-desc">Markets, agri-tech, and entrepreneurship</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="sports.html" class="dropdown-link">
+                  Sports &amp; Athletics
+                  <span class="dropdown-desc">Grassroots football, academies, and league</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="article-digital-literacy.html" class="dropdown-link">
+                  Digital Literacy &amp; Culture
+                  <span class="dropdown-desc">National libraries and digital skills drives</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
           <li class="nav-item"><a href="politics.html" class="nav-link">Politics</a></li>
           <li class="nav-item"><a href="technology.html" class="nav-link">Technology</a></li>
           <li class="nav-item"><a href="business.html" class="nav-link">Business</a></li>
@@ -51,6 +151,19 @@
     </nav>
   </header>
 
+  <!-- BREAKING NEWS TICKER -->
+  <aside class="breaking-ticker-bar" aria-label="Breaking News Ticker">
+    <div class="ticker-badge">Live Desk</div>
+    <div class="ticker-track-wrap">
+      <div class="ticker-track">
+        <span class="ticker-item"><a href="about.html">The DailyLens editorial pair: Verena Likupe and Charity Ndhlovu publish comprehensive Malawian news portfolio</a></span>
+        <span class="ticker-item"><a href="article-mubas-lab.html">Blantyre: MUBAS launches new renewable energy hub for student engineering</a></span>
+        <span class="ticker-item"><a href="article-solar-irrigation.html">Dowa &amp; Mchinji: Rural solar irrigation systems double smallholder harvest</a></span>
+      </div>
+    </div>
+    <button type="button" id="ticker-toggle-btn" class="ticker-pause-btn" aria-label="Pause news ticker">&#10074;&#10074;</button>
+  </aside>
+
   <!-- MAIN ABOUT CONTENT -->
   <main>
     <div class="container">
@@ -59,29 +172,70 @@
       <section class="about-hero-section">
         <div class="about-hero-grid">
           <div class="about-hero-image-wrap">
-            <img src="images/general/charity_ndhlovu.jpg" alt="Charity Ndhlovu, founder and lead investigative journalist of The DailyLens in Lilongwe newsroom" referrerpolicy="no-referrer">
+            <img src="images/general/charity2.jpeg" alt="Charity Ndhlovu, co-founder of The DailyLens" referrerpolicy="no-referrer">
           </div>
           <div class="about-hero-content">
             <span class="badge badge-about">Our Story &amp; Leadership</span>
             <h1 class="about-hero-title">About The Daily Lens</h1>
             <p class="about-hero-subtitle">Independent. Informative. Dedicated to the People of Malawi.</p>
             <p class="about-hero-desc">
-              Founded and led by Malawian investigative journalist <strong>Charity Ndhlovu</strong>, <em>The DailyLens</em> is an independent digital news organization based in Lilongwe. We are committed to rigorous, fearless, and community-centered reporting that illuminates progress, holds institutions accountable, and amplifies the voices of Malawians shaping the nation&rsquo;s future.
+              Founded and edited by Malawian digital journalists <strong>Verena Likupe</strong> and <strong>Charity Ndhlovu</strong> as part of the <em>Bachelor of Arts in Digital Journalism (BDJOU2)</em>, <strong>The DailyLens</strong> is an independent digital news publishing platform based in Lilongwe. We are committed to rigorous, fearless, and community-centred reporting that illuminates national progress, holds institutions accountable, and amplifies the voices of Malawians shaping the nation&rsquo;s future.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- Journalist Spotlight Section -->
-      <section class="about-values-section" aria-labelledby="journalist-heading">
-        <h2 id="journalist-heading" class="section-title">Meet the Editor: Charity Ndhlovu</h2>
-        <div style="background-color: #ffffff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-sm); margin-bottom: 30px;">
-          <p style="font-size: 1.05rem; line-height: 1.7; color: #334155; margin-bottom: 1rem;">
-            Charity Ndhlovu is a dedicated Malawian multimedia journalist, field producer, and documentary photographer whose work has documented grassroots development, environmental conservation, and technological transformation across all regions of Malawi. From covering smallholder farmer irrigation schemes in Dowa and Mchinji to investigating higher education research hubs at MUBAS and MUST, Charity brings grounded empathy and meticulous fact-checking to every assignment.
-          </p>
-          <p style="font-size: 1.05rem; line-height: 1.7; color: #334155;">
-            &ldquo;Our vision with <em>The DailyLens</em> is straightforward: journalism must belong to the communities it covers. In a rapidly digitizing Malawi, we ensure that whether an innovation emerges from a workshop in Blantyre or a village garden in Dedza, it receives fair, constructive, and dignified national coverage,&rdquo; says Charity Ndhlovu.
-          </p>
+      <!-- DUAL EDITORIAL LEADERSHIP SPOTLIGHT (Verena Likupe & Charity Ndhlovu) -->
+      <section class="about-values-section" aria-labelledby="leadership-heading">
+        <h2 id="leadership-heading" class="section-title">Editorial Leadership &amp; Founders</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: 24px; font-size: 1.05rem;">
+          The DailyLens was conceptualized and developed collaboratively by two student journalists in the Bachelor of Arts in Digital Journalism (BDJOU2) program, combining rigorous investigative reporting with modern digital publishing architecture.
+        </p>
+
+        <div class="editorial-leadership-grid">
+
+          <!-- Leader 1: Verena Likupe -->
+          <article class="leader-card">
+            <div class="leader-img-wrap">
+              <img src="images/general/Verena Likupe.jpeg" alt="Verena Likupe, Co-Founder and Senior Investigative Reporter at The DailyLens" referrerpolicy="no-referrer">
+            </div>
+            <div class="leader-body">
+              <span class="leader-role-badge">Co-Founder &amp; Senior Investigative Reporter</span>
+              <h3 class="leader-name">Verena Likupe</h3>
+              <p class="leader-bio">
+                Verena Likupe is a dynamic Malawian digital journalist specializing in civic accountability, technology policy, and institutional governance. In her reporting for <em>The DailyLens</em>, Verena leads investigations into district council decentralization, youth parliamentary civic engagement, and higher education digital access in Malawi.
+              </p>
+              <p class="leader-bio">
+                &ldquo;Digital journalism provides Malawians with an unprecedented tool to bridge regional divides. Our goal with <em>The DailyLens</em> is to ensure every story adheres to strict verification, dignified framing, and public interest transparency,&rdquo; notes Verena Likupe.
+              </p>
+              <div class="leader-contact">
+                <span>Desk: Civic Affairs &amp; Technology</span>
+                <a href="mailto:verena@thedailylens.com" class="footer-link">verena@thedailylens.com</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Leader 2: Charity Ndhlovu -->
+          <article class="leader-card">
+            <div class="leader-img-wrap">
+              <img src="images/general/charity2.jpeg" alt="Charity Ndhlovu, Co-Founder and Managing Editor at The DailyLens" referrerpolicy="no-referrer">
+            </div>
+            <div class="leader-body">
+              <span class="leader-role-badge">Co-Founder &amp; Managing Editor</span>
+              <h3 class="leader-name">Charity Ndhlovu</h3>
+              <p class="leader-bio">
+                Charity Ndhlovu is a dedicated multimedia journalist, field producer, and documentary photographer whose work has documented grassroots development, environmental conservation, and renewable energy transformation across Malawi. From smallholder irrigation in Dowa to engineering hubs at MUBAS and MUST, Charity brings grounded empathy and factual rigor.
+              </p>
+              <p class="leader-bio">
+                &ldquo;Journalism must belong to the communities it covers. In a rapidly transforming Malawi, we ensure that whether an innovation emerges from a workshop in Blantyre or a village garden in Dedza, it receives national prominence,&rdquo; says Charity Ndhlovu.
+              </p>
+              <div class="leader-contact">
+                <span>Desk: Agriculture &amp; Environment</span>
+                <a href="mailto:charity@thedailylens.com" class="footer-link">charity@thedailylens.com</a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -150,16 +304,55 @@
         </div>
       </section>
 
+      <!-- INTERACTIVE ACCORDION (Requirement 5: Show/Hide Content) -->
+      <section class="about-values-section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        
+        <div class="accordion-group">
+          
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>Who are the editorial founders of The DailyLens?</span>
+              <span class="accordion-chevron">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p><strong>Verena Likupe</strong> and <strong>Charity Ndhlovu</strong> lead The DailyLens editorial team. Together, they commission, report, edit, and publish public-interest stories that matter to communities across Malawi.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>What stories does The DailyLens cover?</span>
+              <span class="accordion-chevron">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p>We cover the people, decisions, and ideas shaping daily life in Malawi. Our reporting spans public affairs, business, technology, sport, the environment, education, and local community news, with a focus on clear context and useful reporting.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span>How are news sources verified?</span>
+              <span class="accordion-chevron">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <p>Every story is reviewed before publication. Reporters seek confirmation from the people and institutions involved, check supporting records where available, and give readers the context needed to understand why a story matters.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <!-- Contact Information Strip -->
       <section class="info-strip-card" aria-label="Newsroom Details">
-        <h3 class="info-strip-title">Newsroom Headquarters</h3>
+        <h3 class="info-strip-title">Newsroom Headquarters &amp; Contacts</h3>
         <div class="info-strip-items">
           <div class="info-strip-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            <span>Managing Editor: <a href="mailto:charity@thedailylens.com">charity@thedailylens.com</a></span>
+            <span>Editorial Team: <a href="mailto:editors@thedailylens.com">editors@thedailylens.com</a></span>
           </div>
           <div class="info-strip-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -180,6 +373,20 @@
     </div>
   </main>
 
+  <!-- SEARCH MODAL (Requirement 5 & 12) -->
+  <div id="search-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="search-modal-title" class="modal-title">Search The DailyLens</h3>
+        <button type="button" class="modal-close-btn" data-modal-close aria-label="Close search dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="search-results-count" class="filter-results-counter">Found stories</p>
+        <div id="search-results-list" class="search-results-list"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- SITE FOOTER -->
   <footer class="site-footer">
     <div class="container">
@@ -189,7 +396,7 @@
             <img src="images/logo-white.svg" alt="The DailyLens" class="footer-logo-img">
           </a>
           <p class="footer-tagline">News, Stories and Perspectives from Malawi</p>
-          <p class="footer-copyright">&copy; 2025 The Daily Lens. All rights reserved. Registered Digital Newsroom in Malawi.</p>
+          <p class="footer-copyright">&copy; <span class="current-year">2026</span> The Daily Lens. Developed by Verena Likupe &amp; Charity Ndhlovu (BDJOU2). All rights reserved.</p>
         </div>
 
         <nav class="footer-nav" aria-label="Footer Navigation">
@@ -200,7 +407,7 @@
             <li><a href="technology.html" class="footer-link">Technology</a></li>
             <li><a href="business.html" class="footer-link">Business</a></li>
             <li><a href="sports.html" class="footer-link">Sports</a></li>
-            <li><a href="about.html" class="footer-link">About Charity Ndhlovu</a></li>
+            <li><a href="about.html" class="footer-link">About Editorial Team</a></li>
             <li><a href="contact.html" class="footer-link">Contact Newsroom</a></li>
           </ul>
         </nav>
@@ -212,8 +419,11 @@
             <span>City Centre, Lilongwe, Malawi</span>
           </p>
           <p class="footer-contact-item">
-            <span>Editor:</span>
-            <a href="mailto:charity@thedailylens.com">charity@thedailylens.com</a>
+            <span>Editors:</span>
+            <span>
+              <a href="mailto:verena@thedailylens.com">verena@thedailylens.com</a> / 
+              <a href="mailto:charity@thedailylens.com">charity@thedailylens.com</a>
+            </span>
           </p>
           <p class="footer-contact-item">
             <span>Desk:</span>

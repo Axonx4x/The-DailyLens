@@ -1,6 +1,6 @@
 {
-  "name": "The DailyLens - News, Stories and Perspectives",
-  "description": "A clean, modern, responsive static digital news publication demonstrating semantic HTML5 and CSS3.",
+  "name": "The DailyLens - Online News Publishing Platform",
+  "description": "A fully functional, responsive, and interactive Malawian digital news platform developed by Verena Likupe and Charity Ndhlovu (BDJOU2) demonstrating Semantic HTML5, CSS3, and JavaScript.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
