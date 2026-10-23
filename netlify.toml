@@ -1,5 +1,3 @@
 [build]
-  # This project is a multi-page static site. Deploy the repository root so
-  # every HTML page and its css/, js/, and images/ assets are available.
-  command = "echo 'Deploying static site files'"
-  publish = "."
+  command = "npm run build"
+  publish = "dist"
